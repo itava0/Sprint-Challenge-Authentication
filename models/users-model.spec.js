@@ -18,8 +18,8 @@ describe("users model", function() {
       ]);
 
       // check if it was inserted into the db
-      const users = await db("users");
-      expect(users).toHaveLength(1);
+      const user = await db("users");
+      expect(user).toHaveLength(1);
     });
   });
 });
