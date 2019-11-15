@@ -19,3 +19,6 @@ module.exports = {
   );
 }
 
+function findBy(role) {
+  return db("users").where(role);
+}
